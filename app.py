@@ -153,9 +153,83 @@ lst = [2, 4, 5, 6]
 #
 # t = (2,)
 # print(type(t))
-
+# print(t[0])
+# t= (1,2,3)
+# print(list(t))
+# print(5 in t)
 # t = (x for x in range(5))
 # print(t)
+# del t
+#
+# print(t)
+
+# set
+# 1. collection to store multiple objects of different datatypes
+# 2. mutable
+# 3. Unordered
+# 4. contain unique elements
+# 5. denoted by set() or {} ( should not be declared like s = {} )
+
+# creating a set
+# s = set()
+# print(type(s))
+
+# s = {1, 2, 3, 4, 3, 2, "abc"}
+
+# print(int(False))
+
+# print(s)
+# accessing set value throws TypeError
+# print(s[2])
+
+# iterating over sets
+# for i in s:
+#     print(i)
+
+# s = {1,2,3}
+#s.add(4)
+# print(s)
+# s.update((5,6,4))
+# print(s)
+# print(s.pop())
+# print(s.remove(4))
+# print(s)
+# print(s.discard(8))
+
+
+#s1 = {1,2,3}
+# s2 = {1,4,5,6}
+#
+# # union
+# print(s1 | s2)
+#
+# # intersection
+# print(s1 & s2)
+#
+# # difference
+# print(s2 - s1)
+#
+# # symmetric diffeference
+# print(s1.symmetric_difference(s2))
+
+# s1 = {1,2,3,4,5}
+# s2 = {2,3}
+#
+# print(s2.issubset(s1))
+# print(s2.issuperset(s1))
+#
+# print(s1.issubset(s2))
+# print(s1.issuperset(s2))
+#
+# s = {1,'abc',4.5}
+# print(len(s))
+
+
+
+
+
+
+
 
 
 
