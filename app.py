@@ -126,6 +126,35 @@ lst = [2, 4, 5, 6]
 # lst = list({1,2,3,4})
 # print(lst)
 
+# aliasing vs cloning
+# aliasing
+# l = [1,2,3]
+# l1 = l
+# l[0]=100
+# print(l1)
+
+# cloning
+# l = [1,2,3]
+# l1 = l.copy()
+# l[0]=100
+# print(l1)
+
+# shallow copy vs deep copy
+
+# shallow copy
+# l = [1,2,3,[3,4,5]]
+# l1 = l.copy()
+# l[3][1]=100
+# print(l1)
+
+# deep copy
+# import copy
+#
+# l = [1,2,3,[3,4,5]]
+# l1 = copy.deepcopy(l)
+# l[3][1]=100
+# print(l1)
+
 # tuple
 # 1. collection of different data types, similar to list
 # 2. immutable
