@@ -339,3 +339,129 @@ import sys
 # va = d.setdefault(2,"Harish")
 # print(va)
 # print(d)
+
+# functions:
+# Groups of statments
+# Reusability
+# types of functions
+# 1. Built-in or pre-defined
+# 2. user-defined
+
+# creating a parameterless function
+# def function_name():
+#     print("Hi")
+#     print("Good morning")
+#     print("How r u")
+#     print("Good Bye")
+#
+#
+# # function calling
+# function_name()
+#
+#
+# # function with parameters
+# def function_to_greet(name):
+#     print(f"Hi {name}!")
+#
+#
+# # arguments vs Parameters
+# function_to_greet("Harish")
+#
+#
+# def add(num1=1, num2=3):
+#     print(num2 + num1)
+#
+#
+# # positional argument
+# add(3, 4)
+#
+# # default arguments
+# add()
+# add(1, 5)
+#
+# add(num2=10, num1=15)
+#
+#
+# # variable-length & kwargs
+#
+# def display_sequence(*args):
+#     print(args)
+#     for i in args:
+#         print(i)
+#
+#
+# display_sequence(1, 2, 3, 0, 4, 89, 100)
+#
+#
+# def display_keypairs(**args):
+#     print(args)
+#     for k, v in args.items():
+#         print(k, v)
+#
+#
+# display_keypairs(user="harish", userid=123)
+# display_keypairs(user="harish1", userid=1234,gender="male")
+
+# def generate_natural_nums(n):
+#     lst = []
+#     for i in range(n + 1):
+#         lst.append(i)
+#     return lst
+
+# values = generate_natural_nums(10)
+# print(values)
+
+# a = 1,2,3,4
+# print(a)
+#
+# def test():
+#     return 1, 3, 5, 6
+# print(test())
+
+# Recursion:
+# function calling itself is known as recursive function.
+# this concept is called Recursion.
+
+# adv:
+# 1. clean code
+# 2. reduce number of lines
+# disadv:
+# 1. not memory efficient
+# 2. hard to debug
+
+# def factorial(n):
+#     if n == 0:
+#         return 1
+#     return n * factorial(n-1)
+#
+# print(factorial(5))
+
+# import sys
+# print(sys.getrecursionlimit())
+# print(sys.setrecursionlimit(400))
+# print(sys.getrecursionlimit())
+
+
+# n = 10
+#
+#
+# def test_func():
+#     global n
+#     n = 12
+#     return n
+#
+#
+# print(test_func())
+# print(n)
+
+# name = "harish"
+
+# def test_func():
+#     res = globals()
+#     return res['name']
+#
+# print(test_func())
+
+# namespace
+# names of  identifiers
+# LEGB
