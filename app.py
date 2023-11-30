@@ -67,7 +67,7 @@ import sys
 #
 # print(sys.getsizeof(4))
 
-lst = [2, 4, 5, 6]
+# lst = [2, 4, 5, 6]
 # print(lst.append(7))
 # # print(lst)
 # print(lst.insert(2,"abc@gmail.com"))
@@ -216,7 +216,7 @@ lst = [2, 4, 5, 6]
 #     print(i)
 
 # s = {1,2,3}
-#s.add(4)
+# s.add(4)
 # print(s)
 # s.update((5,6,4))
 # print(s)
@@ -226,7 +226,7 @@ lst = [2, 4, 5, 6]
 # print(s.discard(8))
 
 
-#s1 = {1,2,3}
+# s1 = {1,2,3}
 # s2 = {1,4,5,6}
 #
 # # union
@@ -253,17 +253,89 @@ lst = [2, 4, 5, 6]
 # s = {1,'abc',4.5}
 # print(len(s))
 
+# Dictionaries:
+# 1. Group of Key-value of pairs
+# 2. Duplicate keys are not allowed but values can be duplicated
+# 3. Any data type can be allowed as key & value
+# 4. Dictionaries are ordered from python 3.7
+# 5. Dictionaries are mutable so that we can add, delete, edit dictionaries
+# 6. Dictionaries are dynamic
+# 7. Keys should be immutable.
+
+# user_info = {
+#     "user_1234": {
+#         "userid": "user_1234",
+#         "username": "Harish@1234",
+#         "name": "Harish",
+#         "gender": "Male",
+#         "age": 25
+#     },
+#     "user_3234": {
+#         "userid": "user_3234",
+#         "username": "Harish@1234",
+#         "name": "Harish3",
+#         "gender": "Male",
+#         "age": 25
+#     },
+#     "user_1235": {
+#         "userid": "user_1235",
+#         "username": "Harish@2234",
+#         "name": "Harish4",
+#         "gender": "Male",
+#         "age": 25
+#     },
+#     "user_1233": {
+#         "userid": "user_1233",
+#         "username": "Harish@1134",
+#         "name": "Harish2",
+#         "gender": "Male",
+#         "age": 25
+#     }
+# }
+
+# accessing values using keys
+# print(user_info['user_1233'])
+# print(user_info['user_1235'])
+
+# dictionary methods
+# update(), items(), values(), keys(), pop(),popitem(),get(),setdefault(), clear()
+
+# creating empty dictionary
+# 2ways
+# d = {}
+# d = dict()
 
 
+# d = {
+#     "name": "Harish",
+# }
+#
+# additional_info = {"course": 'python',
+#                     "webframework": "Django",
+#                     "DB": ["POSTGRES", "MYSQL"]
+#                    }
+# d.update(additional_info)
+# print(d)
+#
+# d = {
+#     1: True,
+#     2: False
+# }
+#
+# d[1]="Hello"
+#
+# print(d)
 
+# print(d[3]) #KeyError: 3
+# val = d.get(1, "Key Not available")
+# print(val)
+# values = d.values()
+# print(type(values))
+# print(values)
+#
+# for value in values:
+#     print(value)
 
-
-
-
-
-
-
-
-
-
-
+# va = d.setdefault(2,"Harish")
+# print(va)
+# print(d)
