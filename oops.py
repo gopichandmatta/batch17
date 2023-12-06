@@ -157,3 +157,27 @@
 #     @classmethod
 #     def class_method_ex(cls):
 #         pass
+
+# Access-Specifiers:
+#####################
+# 1. Private : __name = "Harish"
+# can be accessed only in same class
+
+# 2. Public  : name = "harish"
+# can be accessed from any where
+
+# 3. Protected : _name= "Harish"
+# can be accessed in only child class
+
+
+# class Car:
+#     def __init__(self, color, name):
+#         self.__name = name
+#         self.color = color
+
+
+# c1 = Car("Blue", "Innova")
+# obj._ClassName__attributename
+# print(c1._Car__name)
+# print(c1.name)
+# print(c1.color)
