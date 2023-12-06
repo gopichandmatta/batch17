@@ -465,3 +465,86 @@ import sys
 # namespace
 # names of  identifiers
 # LEGB
+
+# Lambda Functions:
+######################
+# 1. Lambda functions are the ananonymous functions which do not have any name.
+# 2. We can have any number of arguments and only one expression.
+# 3. No return keyword
+# 4. We can use lambda for short operations.
+# 5. improves code readability and reduces the code.
+# 6. mostly we use lambda functions with map, filter, reduce
+
+# is_even_list = [lambda arg=x: arg * 10 for x in range(1, 5)]
+# print(is_even_list[0]())
+# for item in is_even_list:
+# 	print(item)
+
+# lam_fun = lambda x, y, z, k: (x * y * z) + k
+#
+# print(lam_fun(1, 2, 3, 4))
+
+# ternary operator
+# Trueresult if condition else falseresult
+# Trueresult1 if condition else Trueresult2 if condition else FalseResult
+
+# age = 2
+# if age > 18:
+#     print("eligible")
+# else:
+#     print("Not eligible")
+
+# result = "Eligible" if age > 18 else "Not eligible"
+# print(result)
+
+# map(), filter(), reduct()
+# 1. map()
+###########
+# syntax: map(func, seq)
+
+# lst = [10, 20, 30, 40, 50]
+# result = tuple(map(lambda x: x + 5, lst))
+# print(result)
+
+# names = ("harish", "dinesh", "naveen", "ratnam")
+# emails = set(map(lambda name: name + "@ttt.com", names))
+# print(emails)
+
+# filter()
+# syntax: filter(func, seq)
+# import time
+
+# number_list = [i for i in range(1, 10000000)]
+# print(number_list)
+#
+# st = time.time()
+# even_num_list = list(filter(lambda x: x % 2 == 0, number_list))
+# odd_num_list = list(filter(lambda x: x % 2 != 0, number_list))
+# et = time.time()
+# print(et - st)
+# print(even_num_list)
+# print(odd_num_list)
+
+# import time
+# # #
+# st = time.time()
+# print(st)
+# even_lst = []
+# for i in number_list:
+#     if i % 2 == 0:
+#         even_lst.append(i)
+# et = time.time()
+# print(et)
+# print(et - st)
+
+# reduce
+# syntax
+# ===========
+# from functools import reduce
+# reduce(func, seq)
+
+# from functools import reduce
+#
+# lst = [x for x in range(1, 11)]
+# res = reduce(lambda a, b: a + b, lst, 5)
+# print(res)
